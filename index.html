@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Editor</title>
+    <link rel="icon" href="https://assets.stickpng.com/images/5847eb76cef1014c0b5e484f.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header style="cursor: context-menu;">
+        <h1>Online Code Editor</h1>
+        <p><b>Universe</b> <b>R</b>&<b>D</b> Labs</p>
+    </header>
+    <div class="container">
+        <section class="editor">
+            <div class="code-input">
+                <h2>HTML</h2>
+                <textarea id="html-input" placeholder="Enter HTML code here..."></textarea>
+            </div>
+            <div class="code-input">
+                <h2>CSS</h2>    
+                <textarea id="css-input" placeholder="Enter CSS code here..."></textarea>
+            </div>
+            <div class="code-input">
+                <h2>JavaScript</h2>
+                <textarea id="js-input" placeholder="Enter JavaScript code here..."></textarea>
+            </div>
+        </section>
+        <section class="preview">
+            <h2>Preview</h2>
+            <iframe id="result-frame"></iframe>
+        </section>
+    </div>
+    <section class="suggestions">
+        <h2>Suggestions</h2>
+        <div id="suggestions"></div>
+    </section>
+    <section class="error-console">
+        <h2>Error Console</h2>
+        <ul id="error-list"></ul>
+    </section>
+    <section class="export-options">
+        <h2>Export Options</h2>
+        <button id="export-html">Export HTML</button>
+        <button id="export-image">Export Image</button>
+    </section>
+    <footer>
+        <p>&copy; 2023 Universe: <b>R</b>&<b>D</b> Labs</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
